@@ -13,10 +13,15 @@ namespace BatCave {
 public class GameManager : MonoSingleton<GameManager> {
     public static event Action OnGameStarted;
     public static event Action OnGameReset;
-
+	
+	
+	
     [SerializeField] GameObject startGameUi;
     [SerializeField] GameObject gameOverUi;
     [SerializeField] EndlessWorldScroller[] scrollersToUpdate;
+
+	[Header("Audio")]
+	public AudioEvent gameStartAudioEvent;
 
     [Header("Read Only")]
     [SerializeField] bool hasStarted;
@@ -27,6 +32,8 @@ public class GameManager : MonoSingleton<GameManager> {
             return hasStarted;
         }
     }
+	
+
 
     private Transform cameraTransform;
     private Vector3 cameraInitialPosition;
@@ -79,6 +86,8 @@ public class GameManager : MonoSingleton<GameManager> {
         }
 
         // EXERCISE: Play game started audio event.
+
+		gameStartAudioEvent.Play();
 
         hasStarted = true;
         isGameOver = false;
