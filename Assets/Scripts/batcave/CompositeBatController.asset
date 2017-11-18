@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c6063bcc90d74b6f8d40f6818ff7009, type: 3}
+  m_Name: CompositeBatController
+  m_EditorClassIdentifier: 
+  controllers:
+  - {fileID: 11400000, guid: d6a217725b077df42a7730b8565f0fb1, type: 2}
+  - {fileID: 11400000, guid: 96e9f738493a2d84bb7fe43fd20e9647, type: 2}
