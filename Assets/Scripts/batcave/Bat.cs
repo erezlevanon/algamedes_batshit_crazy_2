@@ -10,8 +10,8 @@ namespace BatCave {
 /// </summary>
 [RequireComponent(typeof(Animator), typeof(Rigidbody2D))]
 public class Bat : MonoBehaviour {
-		[Header("Controller")]
-		[SerializeField] BatController batController;
+	[Header("Controller")]
+	[SerializeField] BatController batController;
 
     [Header("Movement")]
     [SerializeField] float flyYSpeed;

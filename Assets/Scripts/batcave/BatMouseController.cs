@@ -4,7 +4,7 @@ using Infra.Gameplay.UI;
 
 namespace BatCave {
 	/// <summary>
-	/// A scriptable object that allows getting control from several bat controllers.
+	/// A scriptable object that allows controlling the bat using the mouse.
 	/// </summary>
 	[CreateAssetMenu(menuName = "Bat Controller/Mouse")]
 
@@ -13,7 +13,7 @@ namespace BatCave {
 		private bool wantsToFlyUp;
 
 		/// <summary>
-		/// Returns true if any of the controllers wants the bat to fly up.
+		/// Returns true if the mouse is held down.
 		/// </summary>
 		public override bool WantsToFlyUp() {
 			return wantsToFlyUp;

@@ -2,7 +2,7 @@
 
 namespace BatCave {
 	/// <summary>
-	/// A scriptable object that allows getting control from several bat controllers.
+	/// A scriptable object that allows controlling the bat using the keyboard.
 	/// </summary>
 	[CreateAssetMenu(menuName = "Bat Controller/Keyboard")]
 
@@ -11,7 +11,7 @@ namespace BatCave {
 		private bool wantsToFlyUp;
 
 		/// <summary>
-		/// Returns true if any of the controllers wants the bat to fly up.
+		/// Returns true if space is pressed dwon.
 		/// </summary>
 		public override bool WantsToFlyUp() {
 			// Handle keyboard input.
