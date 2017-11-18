@@ -14,4 +14,3 @@ MonoBehaviour:
   controllers:
   - {fileID: 11400000, guid: d6a217725b077df42a7730b8565f0fb1, type: 2}
   - {fileID: 11400000, guid: 96e9f738493a2d84bb7fe43fd20e9647, type: 2}
-  - {fileID: 11400000, guid: b9c01d9d8c58fff45928b96683973b8c, type: 2}

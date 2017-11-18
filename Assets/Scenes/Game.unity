@@ -350,7 +350,7 @@ Prefab:
     - target: {fileID: 114641686124731534, guid: 4a9f8ffc61b6b434689fa65ef832f20e,
         type: 2}
       propertyPath: isInvulnerable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114641686124731534, guid: 4a9f8ffc61b6b434689fa65ef832f20e,
         type: 2}
@@ -360,7 +360,7 @@ Prefab:
     - target: {fileID: 114641686124731534, guid: 4a9f8ffc61b6b434689fa65ef832f20e,
         type: 2}
       propertyPath: isAlive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114641686124731534, guid: 4a9f8ffc61b6b434689fa65ef832f20e,
         type: 2}
