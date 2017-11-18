@@ -1794,6 +1794,12 @@ Prefab:
       propertyPath: scrollersToUpdate.Array.data[1]
       value: 
       objectReference: {fileID: 1036153049}
+    - target: {fileID: 114234044640254828, guid: 73f8fb268e5c6425b8a60235f52673d3,
+        type: 2}
+      propertyPath: gameStartAudioEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: ab0d72340dab4c840866e3ef01b3b6fa,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 73f8fb268e5c6425b8a60235f52673d3, type: 2}
   m_IsPrefabParent: 0

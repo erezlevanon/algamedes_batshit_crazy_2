@@ -10,6 +10,9 @@ namespace BatCave {
 /// </summary>
 [RequireComponent(typeof(Animator), typeof(Rigidbody2D))]
 public class Bat : MonoBehaviour {
+		[Header("Controller")]
+		[SerializeField] BatController batController;
+
     [Header("Movement")]
     [SerializeField] float flyYSpeed;
     [SerializeField] float xSpeed;
@@ -58,9 +61,6 @@ public class Bat : MonoBehaviour {
         flyUpBoolAnimParamId = Animator.StringToHash(flyUpBoolAnimParamName);
         isAliveBoolAnimParamId = Animator.StringToHash(isAliveBoolAnimParamName);
 
-        GameInputCapture.OnTouchDown += OnTouchDown;
-        GameInputCapture.OnTouchUp += OnTouchUp;
-
         GameManager.OnGameStarted += OnGameStarted;
         GameManager.OnGameReset += OnGameReset;
 
@@ -69,8 +69,6 @@ public class Bat : MonoBehaviour {
     }
 
     protected void OnDestroy() {
-        GameInputCapture.OnTouchDown -= OnTouchDown;
-        GameInputCapture.OnTouchUp -= OnTouchUp;
         GameManager.OnGameStarted -= OnGameStarted;
         GameManager.OnGameReset -= OnGameReset;
     }
@@ -79,9 +77,9 @@ public class Bat : MonoBehaviour {
         if (!isAlive) return;
 
         // Handle keyboard input.
-        if (Input.GetKeyDown(KeyCode.Space)) {
+			if (batController.WantsToFlyUp()) {
             FlyUp = true;
-        } else if (Input.GetKeyUp(KeyCode.Space)) {
+        } else {
             FlyUp = false;
         }
         animator.SetBool(flyUpBoolAnimParamId, FlyUp);
@@ -139,16 +137,6 @@ public class Bat : MonoBehaviour {
         FlyUp = false;
 
         enabled = true;
-    }
-
-    private void OnTouchDown(PointerEventData e) {
-        // Check that the event was not already handled by the GameManager.
-        if (!isAlive || e.used) return;
-        FlyUp = true;
-    }
-
-    private void OnTouchUp(PointerEventData e) {
-        FlyUp = false;
     }
 }
 }
