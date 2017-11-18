@@ -1,4 +1,5 @@
 Submitted by:
-<student name> <id>
+Erez Levanon
 
 Extra features implemented:
+AI controller
