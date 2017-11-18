@@ -356,7 +356,12 @@ Prefab:
         type: 2}
       propertyPath: wingsSoundSource
       value: 
-      objectReference: {fileID: 1455341788}
+      objectReference: {fileID: 424888198}
+    - target: {fileID: 114641686124731534, guid: 4a9f8ffc61b6b434689fa65ef832f20e,
+        type: 2}
+      propertyPath: isAlive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4a9f8ffc61b6b434689fa65ef832f20e, type: 2}
   m_IsPrefabParent: 0
