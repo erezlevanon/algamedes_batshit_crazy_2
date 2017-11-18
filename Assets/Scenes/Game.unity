@@ -356,7 +356,7 @@ Prefab:
         type: 2}
       propertyPath: wingsSoundSource
       value: 
-      objectReference: {fileID: 424888198}
+      objectReference: {fileID: 1455341788}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4a9f8ffc61b6b434689fa65ef832f20e, type: 2}
   m_IsPrefabParent: 0
@@ -1351,7 +1351,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c4da2b070fad94a23928a75540b26ac3, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1.5
   Loop: 1
