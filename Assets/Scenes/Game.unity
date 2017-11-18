@@ -362,6 +362,24 @@ Prefab:
       propertyPath: isAlive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114641686124731534, guid: 4a9f8ffc61b6b434689fa65ef832f20e,
+        type: 2}
+      propertyPath: batController
+      value: 
+      objectReference: {fileID: 11400000, guid: a8886dcf6effb88468def4258e9132ed,
+        type: 2}
+    - target: {fileID: 1011795716111110, guid: 4a9f8ffc61b6b434689fa65ef832f20e, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714317618157584, guid: 4a9f8ffc61b6b434689fa65ef832f20e, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1132160714423390, guid: 4a9f8ffc61b6b434689fa65ef832f20e, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4a9f8ffc61b6b434689fa65ef832f20e, type: 2}
   m_IsPrefabParent: 0
